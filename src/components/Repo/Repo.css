@@ -1,0 +1,33 @@
+.repo-container{
+    min-height: 150px;
+    width: 100%;
+    padding: 35px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 20px -15px
+}
+
+.repo-title{
+    font-family: "Fira-Code", monospace;
+    font-size: 25px;
+    letter-spacing: -1px;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.repo-title i{
+    font-size: 1.5rem;
+    margin-right: 5px;
+}
+
+.repo-desc{
+    margin: 1rem 0px;
+    font-size: 15px;
+    color: #586069;
+}
+
+.repo-lang, .repo-stars, .repo-forks, .repo-size{
+    font-family: "Fira-Code", monospace;
+    font-size: 15px;
+    color: #586069;
+}
