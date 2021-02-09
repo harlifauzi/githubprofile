@@ -1,18 +1,21 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { Limit, RepoInfo, UserInfo } from '../../components';
+import { LangChart, Limit, RepoInfo, UserInfo } from '../../components';
+import GhPolyglot from 'gh-polyglot';
 
 const User = () => {
     const params = useParams();
     const [userData, setUserData] = useState(null);
     const [rateLimit, setRateLimit] = useState(null);
     const [repoData, setRepoData] = useState(null);
+    const [langData, setLangData] = useState(null);
 
 
     useEffect(() => {
         getUserData();
         getRateLimit();
         getRepoData();
+        getLangData();
     },[])
 
 
@@ -41,12 +44,24 @@ const User = () => {
         fetch(`https://api.github.com/users/${params.key}/repos`)
             .then(response => response.json())
             .then(json => {
-                console.log(json);
                 setRepoData(json);
             })
             .catch(error => {
                 console.error('Error:', error);
             });
+    };
+
+
+    const getLangData = () => {
+        const me = new GhPolyglot(`${params.key}`);
+        me.userStats((err, stats) => {
+            if (err) {
+                console.error('Error:', err);
+            } else {
+                setLangData(stats);
+                console.log(stats);
+            }
+        });
     };
 
 
@@ -56,9 +71,11 @@ const User = () => {
 
             {userData && <UserInfo userData={userData} />}
 
+            {langData && <LangChart langData={langData} />}
+
             {repoData && <RepoInfo repoData={repoData}/>}
         </div>
     )
 }
 
-export default User
+export default User;

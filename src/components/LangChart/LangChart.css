@@ -1,0 +1,8 @@
+.langchart-title{
+    font-size: 28px;
+    font-weight: bold;
+    color: #24292E;
+    border-bottom: 3px dashed #D1D5DA;
+    width: max-content;
+    margin-bottom: 25px;
+}

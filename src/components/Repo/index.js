@@ -4,8 +4,13 @@ import './Repo.css';
 import { LangColors } from '../../utils';
 
 const Repo = (props) => {
+    const openRepo = (link) => {
+        window.open(`${link}`);
+    }
+
+
     return (
-        <div className="repo-container">
+        <div className="repo-container" onClick={() => openRepo(props.repo.html_url)}>
             <p className="repo-title"><i className='bx bx-code-block'></i>{props.repo.name}</p>
             <p className="repo-desc">{props.repo.description}</p>
             <div style={{display: 'flex', justifyContent: 'space-between', marginTop: '50px'}}>

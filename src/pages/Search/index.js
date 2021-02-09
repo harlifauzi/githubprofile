@@ -9,18 +9,6 @@ const Search = () => {
     const [input, setInput] = useState("");
 
 
-    const getLangData = () => {
-        const me = new GhPolyglot(`${input}`);
-        me.userStats((err, stats) => {
-            if (err) {
-                console.error('Error:', err);
-            } else {
-                console.log(stats);
-            }
-        });
-      };
-
-
     const onSubmit = (e) => {
         e.preventDefault();
         // fetch(`https://api.github.com/users/${input}`)

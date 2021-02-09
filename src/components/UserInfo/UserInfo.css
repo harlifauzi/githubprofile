@@ -15,6 +15,10 @@
     margin-top: 20px;
 }
 
+.name:hover{
+    cursor: pointer;
+}
+
 .join{
     font-weight: 400;
     display: flex;

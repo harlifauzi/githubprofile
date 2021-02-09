@@ -6,6 +6,10 @@
     box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 20px -15px
 }
 
+.repo-container:hover{
+    cursor: pointer;
+}
+
 .repo-title{
     font-family: "Fira-Code", monospace;
     font-size: 25px;

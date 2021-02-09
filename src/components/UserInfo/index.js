@@ -3,10 +3,14 @@ import './UserInfo.css';
 import { Avatar, Square } from '..';
 
 const UserInfo = (props) => {
+    const viewProfile = (link) => {
+        window.open(`${link}`);
+    };
+
     return (
         <div className="userinfo-container">
             <Avatar src={props.userData.avatar_url} />
-            <h3 className="name">@{props.userData.login}</h3>
+            <h3 onClick={() => viewProfile(props.userData.html_url)} className="name">@{props.userData.login}</h3>
             <h3 className="join">
                 <i className='bx bx-calendar'></i>Joined{' '}
                 {new Date(props.userData.created_at).toLocaleDateString('en-US', {

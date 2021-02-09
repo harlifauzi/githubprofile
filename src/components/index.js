@@ -6,6 +6,7 @@ import Limit from './Limit';
 import RepoInfo from './RepoInfo';
 import Repo from './Repo';
 import Gap from './Gap';
+import LangChart from './LangChart';
 
 export {
     Input,
@@ -15,5 +16,6 @@ export {
     Limit,
     RepoInfo,
     Repo,
-    Gap
+    Gap,
+    LangChart
 }
