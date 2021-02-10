@@ -74,8 +74,8 @@ const LangData = (props) => {
                         ]
                     }}
                     options={{
-                        responsive: false,
-                        maintainAspectRatio: false,
+                        responsive: true,
+                        maintainAspectRatio: true,
                         legend: {
                             position: 'right',
                         }
@@ -103,8 +103,8 @@ const LangData = (props) => {
                         ]
                     }}
                     options={{
-                        responsive: false,
-                        maintainAspectRatio: false,
+                        responsive: true,
+                        maintainAspectRatio: true,
                         legend: false,
                         scales: {
                             yAxes: [{
@@ -137,8 +137,8 @@ const LangData = (props) => {
                         ],
                     }}
                     options={{
-                        responsive: false,
-                        maintainAspectRatio: false,
+                        responsive: true,
+                        maintainAspectRatio: true,
                         legend: {
                             position: 'right',
                         },

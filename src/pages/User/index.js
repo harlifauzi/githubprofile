@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { LangChart, Limit, RepoInfo, UserInfo } from '../../components';
+import { LangChart, Limit, RepoInfo, UserInfo, Footer } from '../../components';
 import GhPolyglot from 'gh-polyglot';
 
 const User = () => {
@@ -73,7 +73,8 @@ const User = () => {
             {langData && <LangChart langData={langData} repoData={repoData} />}
 
             {repoData && <RepoInfo repoData={repoData}/>}
-
+            
+            <Footer />
         </div>
     )
 }

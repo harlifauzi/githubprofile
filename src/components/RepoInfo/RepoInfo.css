@@ -1,6 +1,6 @@
 .repoinfo-container{
     background-color: #F6F8FA;
-    padding: 50px 80px 100px 80px;
+    padding: 0px 80px 50px 80px;
 }
 
 .repoinfo-title{
@@ -10,4 +10,10 @@
     border-bottom: 3px dashed #D1D5DA;
     width: max-content;
     margin-bottom: 25px;
+}
+
+@media screen and (max-width: 500px){
+    .repoinfo-container{
+        padding: 0px 10px 50px 10px;
+    }
 }

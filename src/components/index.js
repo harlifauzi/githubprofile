@@ -7,6 +7,7 @@ import RepoInfo from './RepoInfo';
 import Repo from './Repo';
 import Gap from './Gap';
 import LangChart from './LangChart';
+import Footer from './Footer';
 
 export {
     Input,
@@ -17,5 +18,6 @@ export {
     RepoInfo,
     Repo,
     Gap,
-    LangChart
+    LangChart,
+    Footer
 }

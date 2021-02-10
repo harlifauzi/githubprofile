@@ -35,3 +35,9 @@
     font-size: 15px;
     color: #586069;
 }
+
+@media screen and (max-width: 500px){
+    .repo-container{
+        padding: 15px;
+    }
+}

@@ -10,8 +10,17 @@
     background-color: #1E2327;
 }
 
-i{
+.search-container i{
     font-size: 100px;
+    color: #0070F3;
+}
+
+.search-notfound{
+    font-size: 15px;
+    margin-top: 50px;
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 p{

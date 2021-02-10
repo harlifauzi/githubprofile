@@ -1,6 +1,8 @@
 .langchart{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(0px, 350px ) );
+    grid-gap: 1em;
+    justify-content: center;
     background-color: #F6F8FA;
     padding: 0px 80px;
 }
@@ -10,8 +12,8 @@
     top: -50px;
     padding: 20px;
     background-color: white;
-    max-width: 400px;
     border-radius: 5px;
+    width: 100%;
 }
 
 .chart-title{
@@ -21,4 +23,10 @@
     border-bottom: 3px dashed #D1D5DA;
     width: max-content;
     margin-bottom: 25px;
+}
+
+@media screen and (max-width: 500px){
+    .langchart{
+        padding: 0px 10px;
+    }
 }
