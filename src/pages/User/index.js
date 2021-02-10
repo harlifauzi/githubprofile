@@ -59,7 +59,6 @@ const User = () => {
                 console.error('Error:', err);
             } else {
                 setLangData(stats);
-                console.log(stats);
             }
         });
     };
@@ -71,9 +70,10 @@ const User = () => {
 
             {userData && <UserInfo userData={userData} />}
 
-            {langData && <LangChart langData={langData} />}
+            {langData && <LangChart langData={langData} repoData={repoData} />}
 
             {repoData && <RepoInfo repoData={repoData}/>}
+
         </div>
     )
 }

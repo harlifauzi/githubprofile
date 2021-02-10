@@ -1,4 +1,20 @@
-.langchart-title{
+.langchart{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F6F8FA;
+    padding: 0px 80px;
+}
+
+.chart-wrapper{
+    position: relative;
+    top: -50px;
+    padding: 20px;
+    background-color: white;
+    max-width: 400px;
+    border-radius: 5px;
+}
+
+.chart-title{
     font-size: 28px;
     font-weight: bold;
     color: #24292E;
