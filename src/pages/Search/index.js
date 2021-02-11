@@ -40,7 +40,7 @@ const Search = () => {
     return (
         <div className="search-container">
             <i className='bx bxl-github'></i>
-            <p>Find Your OctoProfile</p>
+            <p>Find Your Github Profile</p>
 
             <Input 
                 value={input} 
